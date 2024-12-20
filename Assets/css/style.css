@@ -1,0 +1,223 @@
+/*Importacion de fuentes tipograficas*/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --fuente-logo: "Crimson Text", serif;
+  --fuente-secundaria: "Lato", sans-serif;
+  --color-fuente-principal: #0275c7;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: radial-gradient(
+    circle,
+    #bbdff7,
+    #b7def7,
+    #c5e3f7,
+    #d3e8f6,
+    #e0edf6
+  );
+}
+
+/*------------------------Estilos menu de navegacion---------------------*/
+header,
+.container {
+  margin-bottom: 4.5rem;
+  background: transparent;
+}
+/*Estilos para el nombre del dev*/
+.name-brand {
+  font-family: var(--fuente-logo);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.7rem;
+}
+span.second-brand-name {
+  color: var(--color-fuente-principal);
+}
+
+/*Estilos para los links del menu de navegacion, color y fuente tipografica*/
+a.nav-link {
+  font-family: var(--fuente-logo);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+/*Efecto hover para el menu*/
+.nav-link:hover {
+  color: var(--color-fuente-principal) !important;
+  transition-duration: 0.2s;
+}
+
+.d {
+  min-height: 40em;
+}
+.b {
+  min-height: 43em;
+}
+
+/******************Estilos foto de perfil y presentacion principal**********************/
+
+/*Foto de perfil*/
+.img-photo {
+  border-radius: 20px;
+  box-shadow: 0 2px 5px 0 rgba(50, 50, 105, 0.15),
+    0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 0 0 currentColor,
+    15px 14px 30px -13px #3d92f0;
+}
+/*Nombre completo de la presentacion*/
+.main-name {
+  font-family: var(--fuente-logo);
+  font-size: 13vmin;
+}
+.main-second-name {
+  color: var(--color-fuente-principal);
+  font-size: 12vmin;
+}
+
+/*Breve introduccion*/
+.main-description {
+  font-family: var(--fuente-secundaria);
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: normal;
+}
+/*Resalta el cargo a aspirar*/
+.main-job {
+  color: var(--color-fuente-principal);
+  font-weight: 600;
+}
+
+/*********************************Estilos para seccion de sobre mi******************/
+h2 {
+  font-family: var(--fuente-secundaria);
+  font-size: 3.2rem;
+  font-weight: bolder;
+  color: var(--color-fuente-principal);
+}
+/*********************************Estilos para seccion de Habilidades*****************/
+.col-sm-2 {
+  margin: 1rem;
+  height: auto;
+}
+
+.img-fluid .card-img-top {
+  object-fit: contain;
+}
+
+/*Boton de navegacion al inicio*/
+.btn-navigation {
+  background-color: var(--color-fuente-principal);
+  border-radius: 50px;
+  border: none;
+  float: right;
+  position: fixed;
+  top: 40rem;
+  right: 12rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  z-index: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+i.bi-house-fill {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.btn-navigation:hover {
+  background-color: #90baeb;
+  transition-duration: 0.3s;
+}
+
+.btn-navigation:active {
+  background-color: #023e69;
+}
+
+/*******************************Seccion de proyectos****************************************************/
+a.btn.btn-primary {
+  width: 100%;
+}
+
+/************************Estilos para el footer***************************************/
+footer {
+  max-height: auto;
+}
+.mb-4 *{
+  font-family: var(--fuente-secundaria);
+}
+h3{
+  font-size: 2rem;
+}
+
+.footer-contact{
+  font-size: 1.2rem;
+}
+/*Tamaño de los contenedor del formulario y enlaces a redes sociales*/
+.col-sm-6 {
+  border: 1px solid red;
+  min-height: 40em;
+}
+
+/*Iconos de contacto*/
+i.bi {
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+i.bi-download {
+  font-size: 20px;
+}
+
+/*Estilos para el formulario de contacto*/
+form {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.6);
+  padding: 30px;
+}
+textarea {
+  resize: none;
+}
+
+.btn {
+  width: 100%;
+}
+a.btn {
+  width: 9rem;
+}
+
+.footer-development {
+  font-family: var(--fuente-secundaria);
+  font-size: larger;
+}
+
+/**************************Diseños responsive****************************************/
+
+/*Mediaquieries para seccion del footer derechos reservados*/
+
+@media screen and (min-width: 300px) {
+  .footer-final {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-navigation {
+    opacity: 0.8;
+    top: 15rem;
+    right: 20px;
+  }
+
+  .container {
+    margin-bottom: 3rem;
+  }
+
+  .b {
+    min-height: 25rem;
+  }
+}

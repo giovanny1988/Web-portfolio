@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="Assets/icons/icon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <title>Giovanny Vanegas Dev</title>
+  </head>
+  <body>
+    <!-------------------------Encabezado y menú de navegación---------------------->
+    <header id="inicio">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <span class="name-brand"
+            >Giovanny<span class="second-brand-name"> Vanegas</span></span
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ms-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!------------Fin del encabezado y el menú de navegación--------------------------------------->
+    <!--Main page del portafolio, quien soy e introduccion---------------------------------------------->
+    <main class="container">
+      <div class="row">
+        <div
+          class="b col-md-4 d-flex justify-content-center align-items-center"
+        >
+          <img
+            src="Assets/images/perfil.jpg"
+            class="img-fluid img-photo"
+            alt="Foto de perfil"
+            width="300"
+          />
+        </div>
+        <div class="b col-md-8 d-flex align-items-center">
+          <div>
+            <h1 class="main-name">
+              Giovanny<span class="main-second-name"> Vanegas</span>
+            </h1>
+            <p class="main-description">
+              <span class="main-job">Desarrollador</span>,apasionado por la
+              tecnología, siempre en busca de mejorar y aprender. Enfrento
+              desafíos con creatividad y eficiencia, aplicando conocimientos
+              adquiridos en proyectos académicos y personales para crear
+              soluciones innovadoras.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!----------------------------Fin del main page--------------------------------->
+    <section class="container d-flex justify-content-center align-items-center flex-column d">
+      <h2 id="sobre-mi" class="text-center mb-5">Sobre mi</h2>
+      <p class="main-description">
+        ¡Buen día! Soy desarrollador con experiencia en proyectos personales y académicos, donde he adquirido habilidades sólidas en programación y análisis de datos. He trabajado como tester de software, desempeñándome en tareas de pruebas de calidad, despliegues en servidores y manejo de bases de datos. Actualmente, soy auxiliar de bases de datos, lo que me ha permitido profundizar en el análisis de información y la resolución de problemas complejos. <br>
+        Me apasiona la tecnología y siempre busco enfrentar nuevos desafíos que me permitan aprender y crecer tanto personal como profesionalmente. Estoy comprometido con la mejora continua y la búsqueda de soluciones innovadoras en cada proyecto en el que participo. <br><br>
+        Fuera del ámbito profesional, disfruto de un estilo de vida activo y equilibrado. Me encanta realizar actividades al aire libre, como subir montañas, recorrer distancias largas en bicicleta (hasta 10 km) y trotar regularmente. Estas actividades no solo me ayudan a mantenerme saludable, sino también a enfocarme y mantener la motivación en mi día a día.
+      </p><br>
+      <a href="Assets/CV_GIOVANNY_VANEGAS.pdf" download="CV_Giovanny_Vanegas.pdf" class="btn btn-warning"></i>Descargar CV</a><br><br>
+    </section>
+    <!--Boton de navegacion-->
+    <div class="container-fluid d-flex justify-content-end">
+      <button id="btnNav" hidden class="btn-navigation"><a href="#inicio"><i class="bi bi-house-fill"></i></a></button>
+    </div>
+    <section class="container d">
+      <h2 id="habilidades" class="text-center">Skills</h2><br><br>
+      <div class="row justify-content-center">
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/html.png"
+            width="80"
+            alt="Logo de html"
+          /> <br>
+          <h5>Html</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/css.png"
+            width="80"
+            alt="Logo de css3"
+          /> <br>
+          <h5>Css</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/js.png"
+            width="80"
+            alt="Logo de Js"
+          /><br>
+          <h5>JavaScript</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/vue js.png"
+            width="80"
+            alt="Logo de vue"
+          /><br>
+          <h5>Vue js</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/mysql.png"
+            width="80"
+            alt="Logo de mysql"
+          /> <br>
+          <h5>MySql</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/boostrap.png"
+            width="80"
+            alt="Logo de boostrap5"
+          /> <br>
+          <h5>Boostrap</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/git.png"
+            width="80"
+            alt="Logo de git"
+          /> <br>
+          <h5>Git</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/java.png"
+            width="80"
+            alt="Logo de java"
+          /> <br>
+          <h5>Java</h5>
+        </div>
+        <div class="col-sm-2 d-flex justify-content-center align-items-center flex-column">
+          <img
+            class="img-fluid"
+            src="Assets/images/node js.png"
+            width="80"
+            alt="Logo de node js"
+          /> <br>
+          <h5>Node js</h5>
+        </div>
+      </div>
+    </section>
+    <section class="container d">
+      <h2 id="proyectos" class="text-center">Proyectos</h2>
+      <br />
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="Assets/images/encriptador.png"
+              class="card-img-top"
+              alt="Vista previa encriptador"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Encriptador</h5>
+              <span class="badge bg-danger">Html</span>
+              <span class="badge bg-info">Css</span>
+              <span class="badge bg-warning">JavaScript</span>
+              <p class="card-text">
+                Sencillo encriptador que reemplaza las vocales de determinado
+                texto. Tambien retorna el texto a su estado original. Se realizó
+                como proyecto educativo de la plataforma Alura Latam.
+              </p>
+              <a href="https://giovanny1988.github.io/Encriptador/" target="_blank" class="btn btn-primary" rel="noopener noreferrer">Ver encriptador</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Assets/images/portfolio.png" class="card-img-top" alt="Portafolio web imagen" />
+            <div class="card-body">
+              <h5 class="card-title">Portafolio personal</h5>
+              <span class="badge bg-danger">Html</span>
+              <span class="badge bg-info">Css</span>
+              <span class="badge bg-primary">Boostrap</span>
+              <span class="badge bg-warning">JavaScript</span>
+              <span class="badge bg-warning">Scrollreveal js</span>
+              <p class="card-text">
+                Portafolio web del autor con información sobre mi, una breve presentación,
+                habilidades y demas datos de contacto. Se apoyo de librerias de animación y envio de 
+                correos para un rapido desarroll
+              </p>
+              <a href="" target="_blank" class="btn btn-primary" rel="noopener noreferrer">Ver portafolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <h2 id="contacto" class="contac-text text-center pt-3">Contactame!</h2><br>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-md d-flex justify-content-around align-items-center">
+            <div class="mb-4">
+              <h3>Construyendo soluciones en tecnología</h3><br>
+              <p class="footer-contact">+57 3192263824</p>
+              <p class="footer-contact">Bogotá, Colombia</p>
+              <a href="https://github.com/giovanny1988" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/in/giovannyvanegas88" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:giovanny88vs@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope-at-fill"></i></a>
+            </div>
+          </div>
+          <div class="col-md d-flex align-items-center justify-content-center">
+            <form id="form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  placeholder="Nombre Completo"
+                  name="name"
+                  pattern="[A-Za-záéíóúÁÉÍÓÚÑñ\s]+"
+                  title="El nombre solo puede contener letras y espacios"
+                  maxlength="50"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control p-2"
+                  placeholder="Correo Electrónico"
+                  pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                  title="Ingresa un correo valido"
+                  name="email"
+                  maxlength="50"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control p-2"
+                  placeholder="Número de contacto"
+                  pattern="^\+?[0-9]{1,4}[ -]?[0-9]{1,4}[ -]?[0-9]{3,4}$"
+                  name="phone"
+                  title="Número de telefono invalido"
+                  maxlength="15"
+                  minlength="15"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  id="textArea"
+                  class="form-control"
+                  placeholder="Máximo 250 caracteres"
+                  name="message"
+                  rows="7"
+                  maxlength="250"
+                  minlength="30"
+                  required
+                ></textarea>
+                <p id="count-letters">0/250</p>
+              </div>
+              <br />
+              <div class="mb-4">
+                <input
+                  type="submit"
+                  class="btn btn-success"
+                  id="button"
+                  value="Enviar"
+                />
+              </div>
+              <div id="response-message" hidden class="" role="alert"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" style="height: 3rem">
+        <p class="footer-development">Desarrollado por Wilmer Giovanny Vanegas Sánchez &copy; 2024</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="Assets/js/emailjs.js"></script>
+    <script src="Assets/js/script.js"></script>
+  </body>
+</html>
